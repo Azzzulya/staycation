@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import InputNumber from "elements/Form/InputNumber";
+import InputDate from "elements/Form/InputDate";
 export default class Example extends Component {
   state = {
     value: {
@@ -20,7 +20,7 @@ export default class Example extends Component {
           style={{ height: "100vh" }}
         >
           <div className="col-auto">
-            <InputNumber
+            <InputDate
               max={30}
               onChange={this.handleChange}
               name="value"
