@@ -7,6 +7,8 @@ export default function Number(props) {
 
   const [InputValue, setInputValue] = useState(`${prefix}${value}${suffix}`);
 
+  console.log(InputValue)
+
   const onChange = (e) => {
     let value = String(e.target.value);
     if (prefix) value = value.replace(prefix);
@@ -35,6 +37,7 @@ export default function Number(props) {
         },
       });
   };
+
   const plus = () => {
     value < max &&
       onChange({
