@@ -22,6 +22,7 @@ export default function Numbering({ style, className, data, current}) {
               {index + 1}
             </li>
           );
+          
         })}
       </ol>
     </Fade>
