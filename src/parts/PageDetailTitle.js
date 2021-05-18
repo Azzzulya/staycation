@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade";
 import Breadcrumb from "elements/Breadcrumb";
 
 export default function PageDetailTitle({data, breadcrumb}) {
+  console.log(data)
   return (
     <section className="container spacing-sm">
       <Fade bottom>

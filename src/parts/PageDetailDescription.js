@@ -26,7 +26,6 @@ export default function PageDetailDescription({data}) {
               </span>
 
             </div> 
-          
             )
         })}  
       </div> 

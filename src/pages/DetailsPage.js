@@ -18,7 +18,6 @@ export default class DetailsPage extends Component {
   }
 
   render() {
-
     const breadcrumb = [
       {pageTitle: "Home", pageHref: ""},
       {pageTitle: "House Details", pageHref: ""},
