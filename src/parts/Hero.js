@@ -40,7 +40,7 @@ export default function Hero(props) {
 
           <div className="row mt-5" style={{marginTop: 80}}>
             <div className="col-auto" style={{marginRight:35}}>
-              <img src="/assets/images/icon-traveler.svg" alt={`${props.data.travelers} Travelers`}  width="36" height="36"/>
+              <img src="/assets/images/icons/icon_traveler.svg" alt={`${props.data.travelers} Travelers`}  width="36" height="36"/>
               <h6 className="mt-3">
                 {formatNumber(props.data.travelers ) }  
                 <span className="text-gray-500 font-weight-light"> 
@@ -49,7 +49,7 @@ export default function Hero(props) {
               </h6>
             </div>
             <div className="col-auto">
-              <img src="/assets/images/icon-treasure.svg" alt={`${props.data.treasures} Treasures`}  width="36" height="36"/>
+              <img src="/assets/images/icons/icon_treasure.svg" alt={`${props.data.treasures} Treasures`}  width="36" height="36"/>
               <h6 className="mt-3">
                 {formatNumber(props.data.treasures ) } 
                 <span className="text-gray-500 font-weight-light"> 
@@ -58,7 +58,7 @@ export default function Hero(props) {
               </h6>
             </div>
             <div className="col-auto">
-              <img src="/assets/images/icon-cities.svg" alt={`${props.data.cities} Cities`}  width="36" height="36"/>
+              <img src="./assets/images/icons/icon_cities.svg" alt={`${props.data.cities} Cities`}  width="36" height="36"/>
               <h6 className="mt-3">
                 {formatNumber(props.data.cities ) } 
                <span className="text-gray-500 font-weight-light"> 
