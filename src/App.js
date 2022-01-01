@@ -7,7 +7,7 @@ import Checkout from 'pages/Checkout';
 import Example from "pages/Example";
 
 import "assets/scss/style.scss";
-
+const cors = require('cors')
 
 function App() {
   return (
