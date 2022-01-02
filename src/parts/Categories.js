@@ -5,7 +5,7 @@ import Button from 'elements/Button'
 export default function Categories({data}) {
   console.log(data)
   return data.map((category, index1) => {
-
+    if(category.itemId.length ===  0)  return null
     return (
       <section className="container" key={`category-${index1}`}>
         <Fade bottom>
@@ -14,7 +14,7 @@ export default function Categories({data}) {
           </h4>
           <div className="container-grid">
             {
-              category.itemId.length >  0  &&
+             
                   category.itemId.map((item, index2) => {
                     return (
                       <div className="item column-3 row-1" key={`category-${index1}-item-${index2}`} > 
