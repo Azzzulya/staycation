@@ -18,7 +18,9 @@ export default function FeaturedImage({ data }) {
                   <figure className="img-wrapper">
                     <img
                       className="img-cover"
-                      src={item.url}
+                      src={
+                        `${process.env.REACT_APP_HOST}/${item.imageUrl}`
+                       }
                       alt={item._id}
                     />
                   </figure>

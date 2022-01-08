@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 import Button from 'elements/Button'
 
 export default function Categories({data}) {
-  console.log(data)
+  console.log("data", data)
   return data.map((category, index1) => {
     if(category.itemId.length ===  0)  return null
     return (
@@ -31,7 +31,7 @@ export default function Categories({data}) {
                             </figure>
                             <div className="meta-wrapper">
                               <Button type="link" herf={`/properties/${item._id}`} className="stretched-link d-block text-gray-800" >
-                                <h5 className="h4">{item.name} </h5>
+                                <h5 className="h4">{item.title} </h5>
                               </Button>
                               <span className="text-gray-500">
                                 {item.country}

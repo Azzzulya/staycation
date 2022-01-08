@@ -5,7 +5,7 @@ import Star from 'elements/Star'
 import Button from 'elements/Button'
 
 export default function Testimoni({data}) {
-  console.log(data);
+  
   return (
     <Fade bottom>
       <section className="container">

@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade";
 import Button from 'elements/Button'
 
 export default function MostPicked(props) {
+  console.log("props", props)
   return (
     <section className="container" ref={props.refMostPicked}>
       <Fade bottom>
@@ -28,7 +29,7 @@ export default function MostPicked(props) {
                           className="stretched-link d-block text-white" 
                           href={`/properties/${item._id}`}
                         >
-                          <h5>{item.name}</h5>
+                          <h5>{item.title}</h5>
                         </Button>
                         <span >
                           {item.city}, {item.country}
