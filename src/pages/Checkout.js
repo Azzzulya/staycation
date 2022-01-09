@@ -49,7 +49,7 @@ class Checkout extends Component {
     const { data } = this.state
     const { checkout } = this.props
     const payload = new FormData()
-    payload.append("firstName", data.firstName);
+    payload.append("firstNam", data.firstName);
     payload.append("lastName", data.lastName);
     payload.append("email", data.email);
     payload.append("phoneNumber", data.phone);
@@ -61,11 +61,11 @@ class Checkout extends Component {
     payload.append("bookingEndDate", checkout.date.endDate);
     // payload.append("bankId", checkout.bankId);
     payload.append("image", data.proofPayment[0]);
-    this.props.submitBooking(payload).then( () => {
-      nextStep()
-    }).catch((error) => {
-      console.log(error)
-    })
+    this.props
+      .submitBooking(payload)
+      .then( () => {
+        nextStep()
+      });
   }
 
   render() {
